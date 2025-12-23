@@ -47,22 +47,11 @@ const SocialIcon = ({ platform }: { platform: string }) => {
                 <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.757-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
             </svg>
         ),
-        dribbble: (
-            <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
-                <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.816zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
-            </svg>
-        ),
-        twitch: (
-            <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
-                <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
-            </svg>
-        ),
     };
     return icons[platform] || null;
 };
 
 const floatingCardsData: FloatingCard[] = [
-    // ===== GAUCHE - 3 cartes en arc =====
     {
         id: "twitter",
         type: "social",
@@ -99,8 +88,6 @@ const floatingCardsData: FloatingCard[] = [
         position: { x: -540, y: 280 },
         delay: 0.8,
     },
-
-    // ===== DROITE - 3 cartes en arc inversé =====
     {
         id: "youtube",
         type: "video",
@@ -158,19 +145,19 @@ function FloatingCard({ card }: { card: FloatingCard }) {
         >
             <div
                 className={`
-                    ${sizeClasses[card.size]}
-                    bg-linear-to-br ${card.gradient}
-                    rounded-xl border border-white/8
-                    backdrop-blur-md
-                    p-3
-                    flex flex-col justify-between
-                    shadow-lg shadow-black/30
-                    transition-all duration-500 ease-out
-                    hover:scale-[1.08] hover:border-white/15
-                    hover:shadow-xl hover:shadow-violet-500/5
-                    cursor-pointer
-                    group
-                `}
+        ${sizeClasses[card.size]}
+        bg-linear-to-br ${card.gradient}
+        rounded-xl border border-white/8
+        backdrop-blur-md
+        p-3
+        flex flex-col justify-between
+        shadow-lg shadow-black/30
+        transition-all duration-500 ease-out
+        hover:scale-108 hover:border-white/15
+        hover:shadow-xl hover:shadow-violet-500/5
+        cursor-pointer
+        group
+    `}
             >
                 <div className="flex items-start justify-between">
                     <div
@@ -179,18 +166,18 @@ function FloatingCard({ card }: { card: FloatingCard }) {
                         {card.icon}
                     </div>
                     {card.type === "music" && (
-                        <div className="flex items-end gap-[2px] h-4">
-                            <span className="w-[3px] h-2 rounded-full bg-[#1DB954] animate-pulse" />
+                        <div className="flex items-end gap-0.5 h-4">
+                            <span className="w-0.75 h-2 rounded-full bg-[#1DB954] animate-pulse" />
                             <span
-                                className="w-[3px] h-3 rounded-full bg-[#1DB954] animate-pulse"
+                                className="w-0.75 h-3 rounded-full bg-[#1DB954] animate-pulse"
                                 style={{ animationDelay: "0.15s" }}
                             />
                             <span
-                                className="w-[3px] h-4 rounded-full bg-[#1DB954] animate-pulse"
+                                className="w-0.75 h-4 rounded-full bg-[#1DB954] animate-pulse"
                                 style={{ animationDelay: "0.3s" }}
                             />
                             <span
-                                className="w-[3px] h-2 rounded-full bg-[#1DB954] animate-pulse"
+                                className="w-0.75 h-2 rounded-full bg-[#1DB954] animate-pulse"
                                 style={{ animationDelay: "0.45s" }}
                             />
                         </div>
@@ -224,45 +211,6 @@ function FloatingCard({ card }: { card: FloatingCard }) {
     );
 }
 
-// Mobile version - simplified horizontal scroll
-function MobileFloatingCards() {
-    const mobileCards = floatingCardsData.slice(0, 6);
-
-    return (
-        <div className="mb-6 w-full overflow-hidden lg:hidden">
-            <div className="animate-scroll-cards flex gap-2.5 px-4">
-                {[...mobileCards, ...mobileCards].map((card, index) => (
-                    <div
-                        key={`${card.id}-${index}`}
-                        className={`
-                            shrink-0
-                            w-24 h-16
-                            bg-linear-to-br ${card.gradient}
-                            rounded-lg border border-white/8
-                            backdrop-blur-md
-                            p-2.5
-                            flex flex-col justify-between
-                            shadow-md shadow-black/30
-                        `}
-                    >
-                        <div
-                            className={`rounded-md bg-black/30 p-1 ${card.iconColor} w-fit`}
-                        >
-                            <div className="scale-[0.65] origin-top-left">
-                                {card.icon}
-                            </div>
-                        </div>
-                        <p className="truncate text-[9px] font-medium text-white/90">
-                            {card.title}
-                        </p>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-}
-
-// Hook pour détecter le montage côté client (compatible React 19)
 function useIsMounted() {
     const getSnapshot = () => true;
     const getServerSnapshot = () => false;
@@ -277,21 +225,15 @@ export function FloatingCards() {
     if (!isMounted) return null;
 
     return (
-        <>
-            {/* Desktop floating cards */}
-            <div
-                className="pointer-events-none fixed inset-0 z-0 hidden lg:block"
-                aria-hidden="true"
-            >
-                <div className="relative h-full w-full">
-                    {floatingCardsData.map((card) => (
-                        <FloatingCard key={card.id} card={card} />
-                    ))}
-                </div>
+        <div
+            className="pointer-events-none fixed inset-0 z-0 hidden lg:block"
+            aria-hidden="true"
+        >
+            <div className="relative h-full w-full">
+                {floatingCardsData.map((card) => (
+                    <FloatingCard key={card.id} card={card} />
+                ))}
             </div>
-
-            {/* Mobile scrolling cards */}
-            <MobileFloatingCards />
-        </>
+        </div>
     );
 }
