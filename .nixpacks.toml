@@ -1,15 +1,2 @@
 [phases.setup]
-# Node.js 20 et pnpm pour gérer les packages
 nixPkgs = ["nodejs_20", "pnpm"]
-
-[phases.install]
-# Installer les dépendances
-script = "pnpm install"
-
-[phases.build]
-# Générer le client Prisma et construire Next.js
-script = "pnpm run build"
-
-[phases.start]
-# Lancer l'application en production
-script = "pnpm start"
