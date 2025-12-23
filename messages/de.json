@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "title": "ibout.me - Bald verfügbar",
+        "description": "Alle deine Links. Ein Ort. Erstelle deine Seite in wenigen Klicks."
+    },
+    "hero": {
+        "title": "Dein Universum.",
+        "titleHighlight": "Ein Link.",
+        "description": "Social Media, Inhalte, Links - alles auf deiner Seite."
+    },
+    "form": {
+        "title": "Sei unter den Ersten",
+        "subtitle": "Melde dich an und sichere dir deinen Namen",
+        "emailLabel": "E-Mail-Adresse",
+        "placeholder": "deine@email.com",
+        "submit": "Platz sichern",
+        "submitting": "Anmeldung...",
+        "discordCta": "Tritt uns bei auf",
+        "discordLink": "Discord"
+    },
+    "success": {
+        "title": "Du bist dabei!",
+        "message": "Wir melden uns bald.",
+        "another": "Weitere E-Mail anmelden"
+    },
+    "errors": {
+        "required": "E-Mail erforderlich",
+        "invalid": "Ungültiges E-Mail-Format",
+        "duplicate": "Diese E-Mail ist bereits registriert",
+        "server": "Etwas ist schiefgelaufen. Versuch es später nochmal."
+    },
+    "stats": {
+        "person": "Person auf der Liste",
+        "people": "Personen auf der Liste"
+    },
+    "footer": {
+        "consent": "Mit der Anmeldung stimmst du zu, Updates zum Launch zu erhalten."
+    },
+    "a11y": {
+        "skipToContent": "Zum Hauptinhalt springen",
+        "opensNewWindow": "öffnet in neuem Fenster",
+        "waitlistStats": "Wartelisten-Statistiken"
+    }
+}

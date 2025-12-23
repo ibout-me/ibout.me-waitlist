@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "title": "ibout.me - Próximamente",
+        "description": "Todos tus enlaces. Un solo lugar. Crea tu página en unos clics."
+    },
+    "hero": {
+        "title": "Tu universo.",
+        "titleHighlight": "Un solo enlace.",
+        "description": "Redes, contenido, enlaces - todo en tu página personal."
+    },
+    "form": {
+        "title": "Sé de los primeros",
+        "subtitle": "Regístrate para reservar tu nombre",
+        "emailLabel": "Correo electrónico",
+        "placeholder": "tu@email.com",
+        "submit": "Reservar mi lugar",
+        "submitting": "Registrando...",
+        "discordCta": "Únete en",
+        "discordLink": "Discord"
+    },
+    "success": {
+        "title": "¡Estás dentro!",
+        "message": "Te avisamos pronto.",
+        "another": "Registrar otro correo"
+    },
+    "errors": {
+        "required": "Correo requerido",
+        "invalid": "Formato de correo inválido",
+        "duplicate": "Este correo ya está registrado",
+        "server": "Algo salió mal. Inténtalo más tarde."
+    },
+    "stats": {
+        "person": "persona en la lista",
+        "people": "personas en la lista"
+    },
+    "footer": {
+        "consent": "Al registrarte, aceptas recibir novedades del lanzamiento."
+    },
+    "a11y": {
+        "skipToContent": "Ir al contenido principal",
+        "opensNewWindow": "se abre en una nueva ventana",
+        "waitlistStats": "Estadísticas de la lista de espera"
+    }
+}

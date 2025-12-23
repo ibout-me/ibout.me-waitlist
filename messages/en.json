@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "title": "ibout.me - Coming Soon",
+        "description": "All your links. One place. Create your page in a few clicks."
+    },
+    "hero": {
+        "title": "Your universe.",
+        "titleHighlight": "One link.",
+        "description": "Socials, content, links - all on your personal page."
+    },
+    "form": {
+        "title": "Be first in line",
+        "subtitle": "Sign up to claim your username",
+        "emailLabel": "Email address",
+        "placeholder": "you@email.com",
+        "submit": "Save my spot",
+        "submitting": "Signing up...",
+        "discordCta": "Join us on",
+        "discordLink": "Discord"
+    },
+    "success": {
+        "title": "You're in!",
+        "message": "We'll reach out soon.",
+        "another": "Sign up another email"
+    },
+    "errors": {
+        "required": "Email required",
+        "invalid": "Invalid email format",
+        "duplicate": "This email is already registered",
+        "server": "Something went wrong. Try again later."
+    },
+    "stats": {
+        "person": "person on the list",
+        "people": "people on the list"
+    },
+    "footer": {
+        "consent": "By signing up, you agree to receive launch updates."
+    },
+    "a11y": {
+        "skipToContent": "Skip to main content",
+        "opensNewWindow": "opens in a new window",
+        "waitlistStats": "Waitlist statistics"
+    }
+}

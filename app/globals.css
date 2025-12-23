@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: var(--font-outfit), system-ui, sans-serif;
+    --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+    --text-2xs: clamp(0.625rem, 1.5vw, 0.75rem);
+    --spacing-16\.5: 66px;
+}
+
+@layer base {
+    :root {
+        --color-primary: #8b5cf6;
+        --color-secondary: #a78bfa;
+        --color-accent: #7c3aed;
+        --color-background: #0a0a0f;
+        --color-surface: #13131a;
+        --color-text: #fafafa;
+        --color-text-muted: #a1a1aa;
+    }
+
+    * {
+        @apply border-zinc-800;
+    }
+
+    body {
+        @apply bg-(--color-background) text-(--color-text) antialiased;
+        font-family: var(--font-sans);
+    }
+
+    ::selection {
+        @apply bg-violet-500/30 text-violet-200;
+    }
+}
+
+@layer components {
+    .gradient-text,
+    .linear-text {
+        @apply bg-linear-to-r from-violet-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent;
+    }
+    .ibout-card {
+        @apply relative overflow-hidden rounded-3xl border border-zinc-800/50 bg-zinc-900/50 backdrop-blur-sm transition-all duration-300;
+        @apply hover:border-zinc-700/50 hover:bg-zinc-800/50;
+        @apply hover:shadow-[0_0_40px_rgba(139,92,246,0.1)];
+    }
+
+    .ibout-card-inner {
+        @apply relative z-10 flex h-full w-full flex-col p-5;
+    }
+
+    .ibout-glow {
+        @apply pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500;
+        background: radial-gradient(
+            600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(139, 92, 246, 0.06),
+            transparent 40%
+        );
+    }
+
+    .ibout-card:hover .ibout-glow {
+        @apply opacity-100;
+    }
+
+    .gradient-text {
+        @apply bg-linear-to-r from-violet-400 via-purple-400 to-fuchsia-400
+         bg-clip-text text-transparent;
+    }
+
+    .social-icon {
+        @apply flex h-full w-full items-center justify-center text-zinc-400 transition-all duration-300;
+        @apply hover:text-(--color-primary) hover:scale-110;
+    }
+
+    .noise-overlay {
+        @apply pointer-events-none fixed inset-0 z-50 opacity-[0.015];
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    /* Name scroll animation for hero */
+    @keyframes scroll-names {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    .animate-scroll-names {
+        animation: scroll-names 8s linear infinite;
+    }
+
+    .animate-scroll-names:hover {
+        animation-play-state: paused;
+    }
+}
+
+@layer utilities {
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3f3f46;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #52525b;
+}

@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "title": "ibout.me - Bientôt disponible",
+        "description": "Tous tes liens. Un seul endroit. Crée ta page en quelques clics."
+    },
+    "hero": {
+        "title": "Ton univers.",
+        "titleHighlight": "Un seul lien.",
+        "description": "Réseaux, contenus, liens - tout réuni sur ta page perso."
+    },
+    "form": {
+        "title": "Sois dans les premiers",
+        "subtitle": "Inscris-toi pour réserver ton pseudo",
+        "emailLabel": "Adresse email",
+        "placeholder": "ton@email.com",
+        "submit": "Je réserve ma place",
+        "submitting": "Inscription...",
+        "discordCta": "Rejoins-nous sur",
+        "discordLink": "Discord"
+    },
+    "success": {
+        "title": "C'est noté !",
+        "message": "On te tient au courant très vite.",
+        "another": "Inscrire une autre adresse"
+    },
+    "errors": {
+        "required": "Email requis",
+        "invalid": "Format d'email invalide",
+        "duplicate": "Cet email est déjà inscrit",
+        "server": "Une erreur est survenue. Réessaye plus tard."
+    },
+    "stats": {
+        "person": "personne sur la liste",
+        "people": "personnes sur la liste"
+    },
+    "footer": {
+        "consent": "En t'inscrivant, tu acceptes de recevoir des news sur le lancement."
+    },
+    "a11y": {
+        "skipToContent": "Aller au contenu principal",
+        "opensNewWindow": "s'ouvre dans une nouvelle fenêtre",
+        "waitlistStats": "Statistiques de la liste d'attente"
+    }
+}
