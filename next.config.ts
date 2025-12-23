@@ -29,15 +29,6 @@ const nextConfig: NextConfig = {
             },
         ];
     },
-
-    async rewrites() {
-        return [
-            {
-                source: "/waitlist/en",
-                destination: "/en", // Affiche le contenu de /en tout en gardant l'URL /waitlist/en
-            },
-        ];
-    },
 };
 
 export default withNextIntl(nextConfig);
