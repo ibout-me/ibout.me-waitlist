@@ -4,7 +4,7 @@
     "author": "Jessy DAVID - https://jessy-david.dev",
     "private": true,
     "engines": {
-        "node": "23"
+        "node": "22.18"
     },
     "scripts": {
         "dev": "next dev --turbopack",
