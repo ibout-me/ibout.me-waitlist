@@ -159,14 +159,14 @@ function FloatingCard({ card }: { card: FloatingCard }) {
             <div
                 className={`
                     ${sizeClasses[card.size]}
-                    bg-gradient-to-br ${card.gradient}
-                    rounded-xl border border-white/[0.08]
+                    bg-linear-to-br ${card.gradient}
+                    rounded-xl border border-white/8
                     backdrop-blur-md
                     p-3
                     flex flex-col justify-between
                     shadow-lg shadow-black/30
                     transition-all duration-500 ease-out
-                    hover:scale-[1.08] hover:border-white/[0.15]
+                    hover:scale-[1.08] hover:border-white/15
                     hover:shadow-xl hover:shadow-violet-500/5
                     cursor-pointer
                     group
@@ -200,7 +200,7 @@ function FloatingCard({ card }: { card: FloatingCard }) {
                             <svg
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="h-2 w-2 text-white ml-[1px]"
+                                className="h-2 w-2 text-white ml-px"
                             >
                                 <polygon points="5,3 19,12 5,21" />
                             </svg>
@@ -235,10 +235,10 @@ function MobileFloatingCards() {
                     <div
                         key={`${card.id}-${index}`}
                         className={`
-                            flex-shrink-0
+                            shrink-0
                             w-24 h-16
-                            bg-gradient-to-br ${card.gradient}
-                            rounded-lg border border-white/[0.08]
+                            bg-linear-to-br ${card.gradient}
+                            rounded-lg border border-white/8
                             backdrop-blur-md
                             p-2.5
                             flex flex-col justify-between
