@@ -92,6 +92,91 @@
     .animate-scroll-names:hover {
         animation-play-state: paused;
     }
+
+    /* Floating cards animations */
+    @keyframes float-1 {
+        0%,
+        100% {
+            transform: translate(-50%, -50%) translateY(0px) translateX(0px);
+        }
+        50% {
+            transform: translate(-50%, -50%) translateY(-12px) translateX(4px);
+        }
+    }
+
+    @keyframes float-2 {
+        0%,
+        100% {
+            transform: translate(-50%, -50%) translateY(0px) translateX(0px);
+        }
+        50% {
+            transform: translate(-50%, -50%) translateY(-8px) translateX(-6px);
+        }
+    }
+
+    @keyframes float-3 {
+        0%,
+        100% {
+            transform: translate(-50%, -50%) translateY(0px) translateX(0px);
+        }
+        33% {
+            transform: translate(-50%, -50%) translateY(-10px) translateX(3px);
+        }
+        66% {
+            transform: translate(-50%, -50%) translateY(-5px) translateX(-3px);
+        }
+    }
+
+    @keyframes fade-in-float {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) translateY(30px) scale(0.95);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -50%) translateY(0px) scale(1);
+        }
+    }
+
+    .floating-card {
+        opacity: 0;
+        animation: fade-in-float 0.8s ease-out forwards;
+        pointer-events: auto;
+    }
+
+    .floating-card.animated {
+        animation: fade-in-float 0.8s ease-out forwards,
+            float-1 7s ease-in-out infinite;
+        animation-delay: var(--delay, 0s), calc(var(--delay, 0s) + 0.8s);
+    }
+
+    .floating-card:nth-child(2n) {
+        animation: fade-in-float 0.8s ease-out forwards,
+            float-2 8s ease-in-out infinite;
+    }
+
+    .floating-card:nth-child(3n) {
+        animation: fade-in-float 0.8s ease-out forwards,
+            float-3 9s ease-in-out infinite;
+    }
+
+    /* Mobile horizontal scroll animation */
+    @keyframes scroll-cards {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-scroll-cards {
+        animation: scroll-cards 20s linear infinite;
+    }
+
+    .animate-scroll-cards:hover {
+        animation-play-state: paused;
+    }
 }
 
 @layer utilities {

@@ -2,6 +2,7 @@
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { BackgroundEffects } from "@/components/layout/BackgroundEffects";
+import { FloatingCards } from "@/components/layout/FloatingCards";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { SuccessMessage } from "@/components/waitlist/SuccessMessage";
@@ -64,6 +65,7 @@ export default function WaitlistPage() {
     return (
         <>
             <BackgroundEffects />
+            <FloatingCards />
 
             <div className="fixed right-3 top-3 z-50 sm:right-4 sm:top-4">
                 <LanguageSwitcher />
@@ -71,10 +73,15 @@ export default function WaitlistPage() {
 
             <main
                 id="main-content"
-                className="relative flex min-h-screen flex-col items-center justify-center px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
+                className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
                 role="main"
             >
                 <Header />
+
+                {/* Mobile floating cards - shown above hero on mobile */}
+                <div className="lg:hidden">
+                    {/* Cards are rendered inside FloatingCards component */}
+                </div>
 
                 {/* Hero section */}
                 <section
